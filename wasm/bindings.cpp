@@ -60,6 +60,8 @@ EMSCRIPTEN_BINDINGS(my_module) {
 
     register_vector<JSNode>("NodeVector");
 
+    register_vector<int>("VectorInt");
+
     function("dijkstraPath", &dijkstraPath);
     function("bfsPath", &bfsPath);
 }
